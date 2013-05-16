@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HDFC BANK
+</title>
+
+<style type="text/css">
+#formbuttons {
+	display: block;
+	height: 15px;
+}
+
+.buttonstrip {
+	width: 100%;
+	height:35px;
+	background-color: #000000;
+	
+	
+}
+
+div.styled {
+  border-width:1px;
+  border-color:black;
+  border-style: solid solid solid solid;
+  width:500px;
+  }
+
+div#menu {
+width: 30%;
+background-color: yellow;
+position:absolute;
+bottom: 0;
+left: 35%;
+display:none;
+}
+  
+</style>
+
+
+
+<script src="js/cordova-2.6.0.js"></script>
+<script type="js/jquery.mobile.js"></script>
+<script type="text/javascript" charset="utf-8">
+
+
+var username;
+var password;
+
+var states = {};
+var networkState;
+var processMessage= "Processing ...."
+var SERVICE_URL;
+
+var menuOpen = false;
+var menuDiv = "";
+
+
+	
+	//called when application starts
+	document.addEventListener("deviceready", onDeviceReady, false);
+	
+	function onDeviceReady()
+	{
+	
+		
+		//navigator.notification.alert("Device is ready to use");
+		
+		
+		//restricts back button
+		//document.addEventListener("backbutton", onBackKeyDown, false);
+ 
+		menuDiv = document.querySelector("#menu");
+		document.addEventListener("menubutton", doMenu, false);
+		
+		
+		
+		if(checkConnection()==true)
+		{
+			window.MyToaster.showMessage('Internet Connection available');
+			window.MyToaster.showMessage('Connection type: ' + states[networkState]);
+			
+		}
+		else
+		{
+			window.MyToaster.showMessage('Internet Connection is not available');
+			
+		}
+	}
+	
+	function onBackKeyDown()
+	{
+		//Prevents Back Button
+		//No code Here
+	}
+	
+		function doMenu() 
+		{
+			console.log("The menu was clicked...");
+			if(menuOpen) 
+			{
+				console.log("close the menu");
+				//menuDiv.style.display="none";
+				menuOpen = false;
+			} 
+			else
+			{
+				console.log("open the menu");
+				//menuDiv.style.display="block";
+				menuOpen = true;
+			}
+ 
+		}
+	function signIn()
+	{
+		username = document.getElementById("username").value;
+		password = document.getElementById("password").value;
+		if(username=="" || password=="")
+		{
+		
+			    window.MyToaster.showMessage('Please Enter Corect Username');
+					
+		}
+		else if(username=="nuc" && password =="nuc")
+		{
+			  navigator.notification.activityStart("Loggin in", "loading");
+			  navigator.notification.activityStop();
+			  
+			  
+			   loadHomePage();           
+			   
+		}
+		else
+		{
+			window.MyToaster.showMessage('Please Enter Corect Username');
+			
+		}
+	
+	}
+	
+		function loadHomePage()
+		{
+			navigator.app.loadUrl('file:///android_asset/www/test.html');
+		}
+		function checkConnection() {
+        networkState = navigator.network.connection.type;
+
+        states = {};
+        states[Connection.UNKNOWN]  = 'Unknown connection';
+        states[Connection.ETHERNET] = 'Ethernet connection';
+        states[Connection.WIFI]     = 'WiFi connection';
+        states[Connection.CELL_2G]  = 'Cell 2G connection';
+        states[Connection.CELL_3G]  = 'Cell 3G connection';
+        states[Connection.CELL_4G]  = 'Cell 4G connection';
+        states[Connection.NONE]     = 'No network connection';
+		
+		return true;
+        //alert('Connection type: ' + states[networkState]);
+    }
+
+</script>
+</head>
+<br/>
+<br/>
+<br/>
+<body>
+<center>
+<img src="images/pagelogo.jpg">
+<br/><br/><br/>
+</center>
+
+<table>
+		<tr>
+			<td>
+				<font style="font-family:arial;color:#818080;font-size:12px">
+				Username
+				</font>
+			</td>
+			<td>
+				
+				<input type="text" id="username">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<font style="font-family:arial;color:#818080;font-size:12px">
+
+				Password
+				</font>
+			</td>
+			<td>	
+				<input type="password" id="password">
+			</td
+		</tr>
+</table>
+
+<br/>
+<center>
+	<button onClick="signIn();"><font color="#000000">Sign in</font></button>
+</center>
+</body>
+</html>

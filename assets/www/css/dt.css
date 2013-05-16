@@ -1,0 +1,539 @@
+@CHARSET "ISO-8859-1";
+
+
+
+BODY {
+	font-family: "Verdana", "arial", sans-serif;
+	font-size: 10px;
+	margin: 6px auto;
+	width: 100%;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+input
+{  
+    font-family: "Verdana", "arial", sans-serif;
+    font-size:inherit;
+    color: #000000;
+}
+Select{
+    font-family: "Verdana", "arial", sans-serif;
+    font-size:inherit;
+    color: #000000;
+}
+/*
+	layout styles
+*/
+#clear {
+	display: block;
+	width: 100%;
+	height: 40px;
+}
+
+div#dates{
+
+  height:450px;
+  overflow:scroll;
+}
+
+#product_logo {
+	display: block;
+	float: left;
+	background-image: url("/cr/resources/common/images/product_logo.png");
+	background-repeat: no-repeat;
+	margin-top: 5px;
+	width: 95px;
+	height: 25px;
+}
+
+#divider1 {
+	background-image: url("/alm/resources/theme/auronova/images/div1.gif");
+	height: 4px;
+	width: 100%;
+}
+
+#header {
+	display: block;
+	width: 100%;
+	height: 36px;
+}
+
+#divider2 {
+	background-image: url("/alm/resources/theme/auronova/images/div2.gif");
+	height: 4px;
+	width: 100%;
+}
+
+#header2 {
+	display: block;
+	padding-top: 5px;
+	width: 100%;
+	height: 32px;
+}
+
+#sitepath {
+	width: 100%;
+	height: 25px;
+}
+
+#contentmain {
+	display: block;
+	height: 70%;
+}
+
+#footerdivider {
+	background-image: url("/alm/resources/theme/auronova/images/div1.gif");
+	height: 1px;
+	width: 100%;
+}
+
+#footer {
+	vertical-align: top;
+	font-size: 9px;
+}
+
+/*
+	css for login page
+*/
+div#clear img {
+	padding-top: 7px;
+}
+
+input#loginbutton {
+	width: 68px;
+	height: 25px;
+	background-image: url("/alm/resources/theme/auronova/images/login.png");
+	background-repeat: no-repeat;
+}
+
+.modulepath {
+	width: 100%;
+	height: 25px;
+	background-image: url("/alm/resources/theme/auronova/images/type.gif");
+	background-repeat: repeat-x;
+}
+
+#logo {
+	display: block;
+	float: left;
+	background-image: url("/alm/resources/common/images/logo.png");
+	background-repeat: no-repeat;
+	width: 155px;
+	height: 50px;
+}
+
+#footercontent {
+	display: inline;
+	float: right;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+#leftmenu {
+	float: left;
+	width: 180px;
+	height: 100%;
+	background-color: #EEF2F3;
+}
+
+#content {
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+#contentbody {
+	height: 101%;
+	overflow: auto;
+}
+
+#contentbodyfactsheet {
+	height: 90.2%;
+	overflow: auto;
+}
+
+#contentbodymodel {
+	height: 80%;
+	overflow: auto;
+}
+
+
+#formbody {
+	height: 100%;
+	overflow: auto;
+}
+
+#formbodyfactline {
+	height: 90%;
+	overflow: auto;
+}
+
+
+
+#formbuttons {
+	display: block;
+	height: 25px;
+}
+
+.buttonstrip {
+	width: 100%;
+	background-color: #C2D1D8;
+}
+
+#website {
+	display: inline;
+	padding-left: 500px;
+}
+
+.f-right {
+	float: right;
+}
+
+.modulepath {
+	padding-top: 5px;
+	font-size: x-small;
+	font-weight: bolder;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.v-top {
+	vertical-align: top;
+}
+
+.inputtable {
+	padding: 15px 15px 15px 15px;
+}
+
+.label {
+	font-family: "Verdana", "arial", sans-serif;
+	font-size: 11px;
+}
+
+.clearinput {
+	background-color: #FFFFFF;
+	border: solid 1pt #B2C6DF;
+}
+
+TABLE#data,TABLE.data {
+	border-collapse: collapse;
+	color: #000000;
+}
+
+TABLE#data TD,TABLE.data TD {
+	border-bottom: solid 1px black;
+}
+
+TABLE#data tr:FIRST-CHILD,TABLE.data TR:FIRST-CHILD {
+	border-bottom: none;
+	color: #000000;
+}
+
+TABLE#data thead,TABLE.data THEAD {
+	background-color: #C2D1D8;
+}
+
+TABLE {
+	font-family: "Verdana", "arial", sans-serif;
+	font-size: 11px;
+}
+
+TABLE TR {
+	height: 25px;
+}
+
+INPUT[disabled='disabled'] {
+	background-color: white;
+}
+
+#loginform {
+	display: block;
+	padding-top: 40px;
+}
+
+#loginformbody {
+	background-image:
+		url("/alm/resources/theme/auronova/images/loginbox.png");
+	background-repeat: no-repeat;
+	background-size: 352px 221px;
+	margin-left: 450px;
+	width: 336px;
+	height: 221px;
+}
+
+div#loginformbody TABLE {
+	padding-left: 30px;
+	width: 336px;
+	height: 215px;
+}
+
+div#loginformbody TABLE th {
+	padding-top: 10px;
+	height: 10px;
+	width: 336px;
+	text-align: left;
+	vertical-align: middle;
+	font-family: Times New Roman, Times, serif;
+	font-size: 24px;
+	font-stretch: wider;
+}
+
+#loginbutton {
+	padding-right: 13px;
+}
+
+#topspace {
+	padding-top: 50px;
+}
+
+#engineform {
+	display: block;
+	width: 100%;
+	overflow: auto;
+}
+
+#engineformbody {
+	background-repeat: no-repeat;
+	margin-left: 450px;
+	width: 336px;
+	height: 221px;
+}
+
+div#loginformbody TABLE,div#engineformbody TABLE {
+	padding-left: 30px;
+	width: 336px;
+	height: 215px;
+}
+
+div#loginformbody TABLE th,div#engineformbody TABLE TH {
+	height: 10px;
+	width: 336px;
+	text-align: left;
+	vertical-align: middle;
+	font-family: Times New Roman, Times, serif;
+	font-size: 24px;
+	font-stretch: wider;
+}
+
+div#contents {
+	height:350px;
+	overflow:scroll;
+}
+
+div#enginesList {
+    margin-top: 5px;
+	height:20%;
+	overflow:scroll;
+}
+
+#runbutton {
+	float: left;
+}
+
+.top-pad {
+	padding-top: 5px;
+}
+
+.v-middle {
+	vertical-align: middle;
+}
+
+a img {
+	border: none;
+}
+
+a.button {
+	cursor: pointer;
+}
+
+#productline {
+	display: table;
+	padding-left: 300px;
+	padding-top: 75px;
+}
+
+.clearbox {
+	display: table-cell;
+	width: 10px;
+}
+
+.horizontalclearbox {
+	display: table-cell;
+	width: 10px;
+	height: 100%;
+}
+
+.verticalclearbox {
+	display: block;
+	height: 35px;
+}
+
+.product {
+	display: table-cell;
+	width: 145px;
+	height: 145px;
+	font-family: "Times New Roman", "Times", serif;
+	font-size: large;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+	background-image: url("/alm/resources/theme/auronova/images/cellbg.png");
+	background-repeat: no-repeat;
+}
+
+.horizontal div#page1 {
+	display: table-cell;
+	height: 380px;
+	width:500 px;
+	overflow: auto;
+}
+
+.horizontal div#page2 {
+	display: table-cell;
+	height: 380px;
+	overflow: auto;
+}
+.horizontal div#page2 #formbody {
+	display: block;
+	width: 530px;
+	height: 355px;
+	overflow: auto;
+}
+.horizontal div#page1 #formbody {
+	display: block;
+	height: 355px;
+	width: 530px;
+	overflow: auto;
+}
+.product a {
+	
+}
+
+div#page2 div#blankcontent {
+	border: none;
+}
+
+.vertical div#page1 #formbody {
+	display: block;
+	height: 150px;
+	overflow: auto;
+	margin-bottom: 10px;
+}
+
+.vertical div#page2 #formbody {
+	margin-top: 20px;
+	display: block;
+	width: 1050px;
+	height: 170px;
+	overflow: auto;
+}
+
+.horizontaldivider {
+	display: table-cell;
+	width: 2px;
+	height: 100%;
+	background-color: black;
+}
+
+.verticaldivider {
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: black;
+}
+
+.horizontaldividerline {
+	background-image: url("/alm/resources/theme/auronova/images/div1.gif");
+	width: 2px;
+	height: 100%;
+	background-color: black;
+	visibility: hidden;
+}
+
+.enablehorizontaldividerline {
+	background-image: url("/alm/resources/theme/auronova/images/div1.gif");
+	width: 2px;
+	height: 100%;
+	background-color: black;
+	visibility: visible;
+}
+
+#verticaldivider {
+	background-image: url("/alm/resources/theme/auronova/images/div1.gif");
+	height: 2px;
+	width: 100%;
+}
+
+.columnheaderstyle {
+	width: 150px;
+}
+
+.hyperlinkstyle {
+	color: #041AF2;
+	text-decoration: underline;
+}
+
+.tableheaderclass {
+	background-color: #EEF2F3;
+}
+
+.processerror
+{
+vertical-align:top;	
+text-align:center;
+}
+
+.processenginealign
+{
+vertical-align:top;	
+
+}
+
+#reportid
+{
+
+width:200; 
+
+}
+#reportlinegroupid
+{
+width:300;
+}
+
+
+.horizontal div#page2 #enginerun{
+	display: block;
+	height: 400px;
+	overflow: auto;
+}
+
+a.link {
+	text-decoration: underline;
+	color: blue;
+}
+
+.savebuttonimage
+{
+	background-image: url("/cr/resources/theme/auronova/images/save.png");
+    background-repeat: no-repeat;        
+    cursor:pointer;
+}
+
+.savedisabledbuttonimage
+{
+	background-image: url("/cr/resources/theme/auronova/images/save_d.png");
+    background-repeat: no-repeat;        
+    cursor:pointer;
+}
+
+.hidemodeltemplate {
+	
+	display:none;
+}
+
+
+
+
+
